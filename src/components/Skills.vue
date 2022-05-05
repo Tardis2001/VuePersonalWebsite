@@ -102,7 +102,7 @@
                 <div class="content has-text-left">
                     <p class="title is-size-5">Spell</p>
                     <p class="subtitle is-size-5 mt-2">Curso Inglês</p>
-                    <p class="subtitle is-size-6">2020</p>
+                    <p class="subtitle is-size-6">2019</p>
                 </div>
 
            </article>
@@ -115,6 +115,24 @@
                 <li>Português</li>
             </ul>
         </div>
+        <p class="title">Projetos</p>
+        <div class="container block content has-text-left">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-1by1 is-rounded">
+                        <img src="@/assets/img/ProgramaCrud.png">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Programa Crud de clientes e serviços</p>
+                            <p class="subtitle is-5"><a href="https://github.com/Tardis2001/CRUD-ServiceManager">Codigo-Fonte</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </section>
 </template>
@@ -126,4 +144,7 @@ export default {
 </script>
 
 <style>
+.card{
+    background-color: aquamarine;
+}
 </style>
