@@ -13,44 +13,44 @@
             </p>
         </div>
     </div>
-    <div class="hero-body">
-        <div id="Skills" class="container block has-background-grey-lighter p-6 is-radius">
+    <div class="hero-body section">
+        <div id="Skills" class="container block p-6 blockbg">
             <p class="title">Habilidades</p>
             <div class="container block">
-                <p class="subtitle is-size-5 has-text-left">Techs que estou aprendendo e tenho como foco...</p>
+                <p class="is-size-5 has-text-left innerSkill">Techs que estou aprendendo e tenho como foco...</p>
                 <div class="container block">
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             Java 
                         </p>
                         <progress class="progress is-danger" value="70" max="100">15%</progress>
                     </div>
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             HTML
                         </p>
                         <progress class="progress is-info" value="90" max="100">15%</progress>
                     </div> 
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             CSS 
                         </p>
                         <progress class="progress is-info" value="50" max="100">15%</progress>
                     </div>
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             Bulma 
                         </p>
                         <progress class="progress is-danger" value="50" max="100">15%</progress>
                     </div> 
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             Vue 
                         </p>
                         <progress class="progress is-success" value="40" max="100">15%</progress>
                     </div>
                     <div class="container block">
-                        <p class="subtitle has-text-center">
+                        <p class="has-text-center innerSkill">
                             Vontade de Aprender 
                         </p>
                         <progress class="progress is-info" max="100"></progress>
@@ -58,9 +58,9 @@
                 </div>
             </div>
         </div>
-        <p class="title">Formação acadêmica</p>
-        <div class="container block">
+        <div class="container block containerStudy">
             
+        <p class="title" id="cursos">Formação acadêmica</p>
             
            <article class="media container block ">
                 <figure class="media-left">
@@ -91,8 +91,9 @@
         
         </div>
 
-        <p class="title">Cursos</p>
-        <div class="container block">
+        
+        <div class="container block  containerStudy">
+            <p class="title">Cursos</p>
             <article class="media container block ">
                 <figure class="media-left">
                     <p class="image is-128x128">
@@ -106,45 +107,103 @@
                 </div>
 
            </article>
-        
+            <article class="media container block ">
+                <figure class="media-left">
+                    <p class="image is-128x128">
+                        <img src="@/assets/img/udemy.png">
+                    </p>
+                </figure>
+                <div class="content has-text-left">
+                    <p class="title is-size-5">Leonardo Leitão(Udemy)</p>
+                    <p class="subtitle is-size-5 mt-2">Curso Programação Java</p>
+                    <p class="subtitle is-size-6">2021</p>
+                </div>
+
+           </article>
         </div>
         <p class="title">Idiomas</p>
-        <div class="container block content has-text-left">
+        <div class="container block content has-text-left languagecontainer">
             <ul>
-                <li>Inglês</li>
-                <li>Português</li>
+                <li class="done">Inglês</li>
+                <li class="done">Português</li>
+                <li class="point">Linguagens que eu pretendo aprender algum dia!!! </li>
+                <li class="doing">Alemão</li>
+                <li class="doing">Francês</li>
             </ul>
         </div>
         <p class="title">Projetos</p>
         <div class="container block content has-text-left">
-            <div class="card">
-                <div class="card-image">
-                    <figure class="image is-1by1 is-rounded">
-                        <img src="@/assets/img/ProgramaCrud.png">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4">Programa Crud de clientes e serviços</p>
-                            <p class="subtitle is-5"><a href="https://github.com/Tardis2001/CRUD-ServiceManager">Codigo-Fonte</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ul class="content">       
+               <li>   
+                    <Card imgpath="require('../assets/img/ProgramaCrud.png')" title="Programa Crud" description="Programa CRUD criado principalmente com o intuito de ajudar a minha mãe na sua organização e tambem para aprendizado proprio, feito com Java Swing e SQLite" />
+                </li> 
+            </ul>
         </div>
     </div>
   </section>
 </template>
 
 <script>
+import Card from "@/components/cards.vue";
 export default {
+    components:{
+        Card,
+    }
 
 }
 </script>
 
 <style>
-.card{
-    background-color: aquamarine;
+.blockbg{
+    background-color: rgb(53, 53, 53);
+    border-radius: 20px;
+    width:100%;
+    margin : 0;
+
+    color:azure;
+    padding: 500px;
+}
+.innerSkill{
+    color:azure;
+    padding-bottom: 1.3rem;
+}
+.done{
+    margin: 0;
+	padding: 36px 0 35px 50px;
+	list-style-type: none;
+    color:rgb(17, 17, 17);
+    background-image: url("@/assets/img/done.svg");
+    background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+.doing{
+    margin: 0;
+	padding: 36px 0 36px 50px;
+    color:rgb(17, 17, 17);
+	list-style-type: none;
+    background-image: url("@/assets/img/learning.png");
+    background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+.point{
+ margin: 0;
+	padding: 36px 0 36px 50px;
+    color:rgb(17, 17, 17);
+	list-style-type: none;
+    background-image: url("@/assets/img/pointhuman.png");
+    background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+.languagecontainer{
+    background-image: url("@/assets/img/languages.jpg");
+     min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    border-radius: 20px;
 }
 </style>

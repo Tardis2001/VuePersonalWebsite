@@ -19,10 +19,10 @@
                         <a class="navbar-item" href="#Skills">
                             Habilidades
                         </a>
-                        <a class="navbar-item" href="#Cursos">
+                        <a class="navbar-item" href="#cursos">
                             Cursos
                         </a>
-                        <a class="navbar-item" href="#">
+                        <a class="navbar-item" href="#cards">
                             Projetos
                         </a>
                         <a class="navbar-item" href="#footer">
