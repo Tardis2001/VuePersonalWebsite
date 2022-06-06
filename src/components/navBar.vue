@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item">
-                      <img src="https://img.icons8.com/dotty/344/pixel-cat.png" > 
+                      <img src="@/assets/img/tardis.png" > 
                     </a>
                 </div>
                 <span class="navbar-burguer" data-target="navbarMenu">

@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer has-background-dark " id="footer">
+    <footer class="has-background-dark">
         <div class="content has-text-center">
             <div class="is-inline-block">
                 <figure class="image is-64x64">
@@ -19,8 +19,8 @@
             <p class="subtitle is-size-6 has-text-light">
                 Celular: +55 (41)99258-2201 | Email: matheus_santos_evangelista@hotmail.com   
             </p>
-            <p class="subtitle is-size-7 has-text-light">
-                2022 - Por mim mesmo. Todos os direitos reservados
+            <p class="subtitle is-size-7 has-text-light has-text-left">
+                2022 - Ⓒ Matheus Evangelista 
             </p>
         </div>
     </footer>
@@ -33,5 +33,11 @@ export default {
 </script>
 
 <style>
-
+footer{
+    padding-top: 2rem;
+}
+p:nth-last-child(1){
+    /* margin:rem; */
+    padding: 10px;
+}
 </style>

@@ -89,15 +89,16 @@ export default {
 </script>
 
 <style>
-ul#cards{
-  display: table;
+#cards{
+  display: flex;
   margin:0 auto;
-  min-width: 696px;
+  /* min-width: 696px; */
   margin:100px;
   list-style: none;
+  flex-wrap: wrap;
   padding-top: 20px;
 }
-ul#cards li {
+#cards li {
   display:inline;
   list-style-type: none;
 }

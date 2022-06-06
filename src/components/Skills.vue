@@ -5,7 +5,7 @@
             <p class="title is-size-4 has-text-justify">Sobre mim</p>
 
             <p class="subtitle is-size-5 has-text-justify m-5">Bom meu nome você ja viu no começo desse website eu fiz ele com o intuito de mostrar as pessoas sobre mim e o que eu faço e gosto
-                            eu tenho 21 anos, estudo atualmente no curso de ciencia da computação,gosto de jogar basquete e estou sempre aberto a novos aprendizados de diferentes áreas,tambem gosto de fazer livestreams. <br>
+                            eu tenho 21 anos, estudo atualmente no curso de ciencia da computação,gosto de jogar basquete e estou sempre aberto a novos aprendizados de diferentes áreas sou bem proativo nesse quesito, tambem gosto de fazer livestreams programando. <br>
                 
                         <br>
                         <br>
@@ -17,37 +17,43 @@
         <div id="Skills" class="container block p-6 blockbg">
             <p class="title">Habilidades</p>
             <div class="container block">
-                <p class="is-size-5 has-text-left innerSkill">Techs que estou aprendendo e tenho como foco...</p>
+                <p class="is-size-5 has-text-left innerSkill has-text-weight-bold">Techs que estou aprendendo e tenho como foco...</p>
                 <div class="container block">
                     <div class="container block">
                         <p class="has-text-center innerSkill">
                             Java 
                         </p>
-                        <progress class="progress is-danger" value="70" max="100">15%</progress>
+                        <progress class="progress is-danger" value="70" max="100"></progress>
                     </div>
+                      <div class="container block">
+                        <p class="has-text-center innerSkill">
+                            Spring
+                        </p>
+                        <progress class="progress is-success" value="40" max="100"></progress>
+                    </div> 
                     <div class="container block">
                         <p class="has-text-center innerSkill">
                             HTML
                         </p>
-                        <progress class="progress is-info" value="90" max="100">15%</progress>
+                        <progress class="progress is-info" value="90" max="100"></progress>
                     </div> 
                     <div class="container block">
                         <p class="has-text-center innerSkill">
                             CSS 
                         </p>
-                        <progress class="progress is-info" value="50" max="100">15%</progress>
+                        <progress class="progress is-info" value="50" max="100"></progress>
                     </div>
                     <div class="container block">
                         <p class="has-text-center innerSkill">
                             Bulma 
                         </p>
-                        <progress class="progress is-danger" value="50" max="100">15%</progress>
+                        <progress class="progress is-danger" value="70" max="100"></progress>
                     </div> 
                     <div class="container block">
                         <p class="has-text-center innerSkill">
                             Vue 
                         </p>
-                        <progress class="progress is-success" value="40" max="100">15%</progress>
+                        <progress class="progress is-success" value="40" max="100"></progress>
                     </div>
                     <div class="container block">
                         <p class="has-text-center innerSkill">
@@ -133,11 +139,8 @@
         </div>
         <p class="title">Projetos</p>
         <div class="container block content has-text-left">
-            <ul class="content">       
-               <li>   
-                    <Card imgpath="require('../assets/img/ProgramaCrud.png')" title="Programa Crud" description="Programa CRUD criado principalmente com o intuito de ajudar a minha mãe na sua organização e tambem para aprendizado proprio, feito com Java Swing e SQLite" />
-                </li> 
-            </ul>
+          
+                    <Card/>
         </div>
     </div>
   </section>
@@ -205,5 +208,8 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
     border-radius: 20px;
+}
+ul,li{
+    list-style-type: none;
 }
 </style>
