@@ -9,6 +9,6 @@ module.exports = defineConfig({
 			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
 		}
   }
-  ? 'https://matheusevangelista.vercel.app'
+  ? 'http://matheusevangelista.netlify.app'
   : '/'
 })
