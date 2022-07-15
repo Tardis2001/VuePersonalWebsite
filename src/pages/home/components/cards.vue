@@ -106,6 +106,7 @@ export default {
   display: inline-block;
   width: 240px;
   text-align: center;
+  padding: 1.2rem;
 }
 
 .img-container {
@@ -126,11 +127,6 @@ export default {
     display: inline-block;
     border-radius: 20px;
     overflow: hidden;
-    padding: 0px;
-    transform: skew(0deg, 13deg);
-    font-size: 0px;
-    margin: 30px 0px 0px 0px;
-    background: #c8c2c2;
     height: 250px;
     width: 200px;
 }

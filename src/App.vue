@@ -1,33 +1,29 @@
 <template>
-    <div id="app" >
-        
-        <navBar/>
-        <About/>
-        <Skills/>
-        <Footer/>
-    </div>
+  <v-app>
+    
+    <navbar/>
+
+    <v-main>
+    
+        <router-view></router-view>
+    
+    </v-main>
+    
+
+</v-app>
 </template>
 
 <script>
-import navBar from '@/components/navBar.vue'
-import About from '@/components/About.vue'
-import Skills from '@/components/Skills.vue'
-import Footer from '@/components/footer.vue'
-export default{
+import navbar from "@/pages/home/components/navBar.vue"
+export default {
   name: 'App',
+    
   components: {
-    navBar,About,Skills,Footer
- },
-};
-</script>
+  navbar
+  },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  data: () => ({
+    //
+  }),
 }
-
-</style>
+</script>
